@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+#contenedor{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr, 1fr;
+    grid-template-areas: "encabezado" "contenido";
+    gap: 1rem;
+    min-height: 100vh;    
+    width: 100vw;
+    background-color: rgb(41, 55, 15);
+}
+
+#encabezado{
+    grid-area: encabezado;
+    margin-top: 0.5rem;
+    gap: 1rem;
+    padding: 1rem;
+
+}
+
+#encabezado hr{
+    width: 100%;
+    height: 2px;
+    background-color: blue;
+    border: none;
+}
+
+#encabezado h1{
+    text-align: center;
+    color: white;
+}
+
+#card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+#contenido{
+    grid-area: contenido;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+#card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: rgb(0, 157, 157);
+}
+
+.card-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
